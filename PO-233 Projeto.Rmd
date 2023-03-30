@@ -1,0 +1,52 @@
+---
+title: "PO-233 Projeto"
+author: "Due Jie Wan, Lucas Inamine de Angelo e Peter Targino Klein"
+date: "3/29/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+rm(list = ls())
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(ggplot2)
+library(lubridate)
+library(sqldf)
+library(dplyr)
+```
+
+# Dados de aeroporto de Guarulhos.
+
+```{r Dados e nome de colunas}
+cdf <- read_csv('dados/base_capacity_completa.csv', show_col_types = FALSE)
+names(cdf)
+```
+
+# Analise de dados
+## Caracterizacao de dados
+
+
+```{r columns names}
+head(cdf$time)
+
+```
+
+
+
+
+## Tipos de Dados
+
+
+## Exploracao de dados
+
+Dados univariados
+Medidas de localidade, espalhamento e distribuicao
+dados multivariados
+visualizacao
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
