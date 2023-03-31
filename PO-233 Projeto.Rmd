@@ -26,12 +26,29 @@ names(cdf)
 ## Caracterizacao de dados
 
 
-```{r columns names}
+```{r time}
 head(cdf$time)
-
 ```
+time é quantitativo discreto.
+Observa-se que o formato de time necessita de 
+
+```{r arrivals and departures}
+head(cdf$scheduled_arrivals)
+head(cdf$actual_arrivals)
+head(cdf$scheduled_departures)
+head(cdf$actual_departures)
+```
+scheduled_arrivals, actual_arrivals, scheduled_departures e actual_departures são quantitativo discreto.
 
 
+```{r freq_config}
+head(cdf$freq_config)
+```
+freq_config é qualitativo nominal.
+
+```{r freq_config}
+head(cdf$tmpf)
+```
 
 
 ## Tipos de Dados
